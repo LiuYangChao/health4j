@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="5.6">
+<file name="/Users/yanghua/Documents/GitHub/health4j/.idea/.name">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/.idea/compiler.xml">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/.idea/copyright/profiles_settings.xml">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/.idea/encodings.xml">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/.idea/findbugs-idea.xml">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/.idea/libraries/Maven__commons_lang_commons_lang_2_4.xml">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/.idea/libraries/Maven__javax_activation_activation_1_1.xml">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/.idea/libraries/Maven__javax_activation_activation_1_1_1.xml">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/.idea/libraries/Maven__javax_mail_mail_1_4_1.xml">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/.idea/libraries/Maven__javax_mail_mail_1_4_5.xml">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/.idea/libraries/Maven__jaxen_jaxen_1_1_4.xml">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/.idea/libraries/Maven__jaxen_jaxen_1_1_6.xml">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/.idea/libraries/Maven__log4j_log4j_1_2_16.xml">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/.idea/libraries/Maven__org_apache_commons_commons_email_1_2.xml">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/.idea/libraries/Maven__org_apache_commons_commons_email_1_3_3.xml">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/.idea/libraries/Maven__org_apache_velocity_velocity_1_7.xml">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/.idea/misc.xml">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/.idea/modules.xml">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/.idea/scopes/scope_settings.xml">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/.idea/uiDesigner.xml">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/.idea/vcs.xml">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/.idea/workspace.xml">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/health4j.iml">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/pom.xml">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/README.md">
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/release/health4j.sh">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/release/README.md">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/src/main/java/com/freedom/health4j/api/CommandInvoker.java">
+<error line="8" severity="warning" message="First sentence should end with a period." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/src/main/java/com/freedom/health4j/api/EnvVerifier.java">
+<error line="8" severity="warning" message="First sentence should end with a period." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/src/main/java/com/freedom/health4j/api/HealthChecker.java">
+<error line="6" severity="warning" message="Wrong order for &apos;java.util.Collection&apos; import." source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/src/main/java/com/freedom/health4j/api/impl/checkStyle/CheckStyleHealthChecker.java">
+<error line="1" column="9" severity="warning" message="Name &apos;com.freedom.health4j.api.impl.checkStyle&apos; must match pattern &apos;^[a-z]+(\.[a-z][a-z0-9]{1,})*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
+<error line="7" severity="warning" message="Wrong order for &apos;org.apache.commons.logging.Log&apos; import." source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/src/main/java/com/freedom/health4j/api/impl/common/AbstractHealthChecker.java">
+<error line="5" severity="warning" message="Wrong order for &apos;org.apache.commons.logging.Log&apos; import." source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/src/main/java/com/freedom/health4j/api/impl/common/DefaultMerger.java">
+<error line="6" severity="warning" message="Wrong order for &apos;org.apache.commons.logging.Log&apos; import." source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="66" severity="warning" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/src/main/java/com/freedom/health4j/api/impl/common/EmailNotifier.java">
+<error line="5" severity="warning" message="Wrong order for &apos;org.apache.commons.logging.Log&apos; import." source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="49" severity="warning" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/src/main/java/com/freedom/health4j/api/impl/findBugs/FindBugsHealthChecker.java">
+<error line="1" column="9" severity="warning" message="Name &apos;com.freedom.health4j.api.impl.findBugs&apos; must match pattern &apos;^[a-z]+(\.[a-z][a-z0-9]{1,})*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.PackageNameCheck"/>
+<error line="6" severity="warning" message="Wrong order for &apos;org.apache.commons.logging.Log&apos; import." source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="33" severity="warning" message="&apos;if&apos; construct must use &apos;{}&apos;s." source="com.puppycrawl.tools.checkstyle.checks.blocks.NeedBracesCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/src/main/java/com/freedom/health4j/api/impl/pmd/PmdHealthChecker.java">
+<error line="7" severity="warning" message="Wrong order for &apos;org.apache.commons.logging.Log&apos; import." source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/src/main/java/com/freedom/health4j/api/ReportExtractor.java">
+<error line="5" severity="warning" message="Wrong order for &apos;java.io.IOException&apos; import." source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="14" severity="warning" message="First sentence should end with a period." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/src/main/java/com/freedom/health4j/api/ReportMerger.java">
+<error line="10" severity="warning" message="First sentence should end with a period." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/src/main/java/com/freedom/health4j/api/ReportNotifier.java">
+<error line="8" severity="warning" message="First sentence should end with a period." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/src/main/java/com/freedom/health4j/api/Tool.java">
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/src/main/java/com/freedom/health4j/App.java">
+<error line="12" severity="warning" message="Wrong order for &apos;org.apache.commons.logging.Log&apos; import." source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/src/main/java/com/freedom/health4j/Constants.java">
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/src/main/java/com/freedom/health4j/model/BaseModel.java">
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/src/main/java/com/freedom/health4j/model/ReportInfo.java">
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/src/main/java/com/freedom/health4j/model/ReportItem.java">
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/src/main/java/com/freedom/health4j/util/ClazzUtil.java">
+<error line="24" column="29" severity="warning" message="Variable &apos;logger&apos; should be in ALL_CAPS (if it is a constant) or be private (otherwise)." source="com.puppycrawl.tools.checkstyle.checks.naming.ConstantNameCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/src/main/resources/checkstyle.properties">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/src/main/resources/common.properties">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/src/main/resources/findbugs.properties">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/src/main/resources/log4j.properties">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/src/main/resources/pmd.properties">
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/src/main/resources/ReportTemplate.html">
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/target/classes/checkstyle.properties">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/target/classes/com/freedom/health4j/api/CommandInvoker.class">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="1" column="10" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/target/classes/com/freedom/health4j/api/EnvVerifier.class">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="1" column="10" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/target/classes/com/freedom/health4j/api/HealthChecker.class">
+<error line="2" column="12" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/target/classes/com/freedom/health4j/api/impl/checkStyle/CheckStyleHealthChecker.class">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="4" column="5" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/target/classes/com/freedom/health4j/api/impl/common/AbstractHealthChecker.class">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="2" column="5" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/target/classes/com/freedom/health4j/api/impl/common/DefaultMerger.class">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="2" column="5" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/target/classes/com/freedom/health4j/api/impl/common/EmailNotifier.class">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="2" column="5" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/target/classes/com/freedom/health4j/api/impl/findBugs/FindBugsHealthChecker.class">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="4" column="5" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/target/classes/com/freedom/health4j/api/impl/pmd/PmdHealthChecker.class">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="4" column="5" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/target/classes/com/freedom/health4j/api/ReportExtractor.class">
+<error line="3" column="3" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/target/classes/com/freedom/health4j/api/ReportMerger.class">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="1" column="10" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/target/classes/com/freedom/health4j/api/ReportNotifier.class">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="1" column="10" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/target/classes/com/freedom/health4j/api/Tool.class">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="2" column="13" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/target/classes/com/freedom/health4j/App.class">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="6" column="5" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/target/classes/com/freedom/health4j/Constants.class">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="5" column="32" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/target/classes/com/freedom/health4j/model/BaseModel.class">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="4" column="12" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/target/classes/com/freedom/health4j/model/ReportInfo.class">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="3" column="3" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/target/classes/com/freedom/health4j/model/ReportItem.class">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="2" column="5" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/target/classes/com/freedom/health4j/util/ClazzUtil$1.class">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="1" column="11" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/target/classes/com/freedom/health4j/util/ClazzUtil.class">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+<error line="5" column="5" severity="error" message="File contains tab characters (this is the first instance)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/target/classes/common.properties">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/target/classes/findbugs.properties">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/target/classes/log4j.properties">
+<error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/target/classes/pmd.properties">
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/target/classes/ReportTemplate.html">
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/target/MANIFEST.MF">
+</file>
+</checkstyle>

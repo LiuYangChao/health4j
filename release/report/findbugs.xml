@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.0" sequence="0" timestamp="1422094715000" analysisTimestamp="1422094716840" release="">
+  <Project projectName="">
+    <Jar>/Users/yanghua/Documents/GitHub/health4j</Jar>
+  </Project>
+  <BugInstance type="DM_BOXED_PRIMITIVE_FOR_PARSING" priority="1" rank="16" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="com.freedom.health4j.App">
+      <SourceLine classname="com.freedom.health4j.App" start="28" end="182" sourcefile="App.java" sourcepath="com/freedom/health4j/App.java"/>
+    </Class>
+    <Method classname="com.freedom.health4j.App" name="checkup" signature="(Ljava/util/List;)Lcom/freedom/health4j/model/ReportInfo;" isStatic="true">
+      <SourceLine classname="com.freedom.health4j.App" start="149" end="182" startBytecode="0" endBytecode="736" sourcefile="App.java" sourcepath="com/freedom/health4j/App.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="intValue" signature="()I" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="701" end="701" startBytecode="0" endBytecode="28" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="parseInt" signature="(Ljava/lang/String;)I" isStatic="true" role="SHOULD_CALL"/>
+    <SourceLine classname="com.freedom.health4j.App" start="155" end="155" startBytecode="80" endBytecode="80" sourcefile="App.java" sourcepath="com/freedom/health4j/App.java"/>
+  </BugInstance>
+  <BugInstance type="DM_BOXED_PRIMITIVE_FOR_PARSING" priority="1" rank="16" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="com.freedom.health4j.api.impl.checkStyle.CheckStyleHealthChecker">
+      <SourceLine classname="com.freedom.health4j.api.impl.checkStyle.CheckStyleHealthChecker" start="19" end="99" sourcefile="CheckStyleHealthChecker.java" sourcepath="com/freedom/health4j/api/impl/checkStyle/CheckStyleHealthChecker.java"/>
+    </Class>
+    <Method classname="com.freedom.health4j.api.impl.checkStyle.CheckStyleHealthChecker" name="extract" signature="()Ljava/util/Collection;" isStatic="false">
+      <SourceLine classname="com.freedom.health4j.api.impl.checkStyle.CheckStyleHealthChecker" start="65" end="99" startBytecode="0" endBytecode="678" sourcefile="CheckStyleHealthChecker.java" sourcepath="com/freedom/health4j/api/impl/checkStyle/CheckStyleHealthChecker.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="intValue" signature="()I" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="701" end="701" startBytecode="0" endBytecode="28" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="parseInt" signature="(Ljava/lang/String;)I" isStatic="true" role="SHOULD_CALL"/>
+    <SourceLine classname="com.freedom.health4j.api.impl.checkStyle.CheckStyleHealthChecker" start="85" end="85" startBytecode="177" endBytecode="177" sourcefile="CheckStyleHealthChecker.java" sourcepath="com/freedom/health4j/api/impl/checkStyle/CheckStyleHealthChecker.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="com.freedom.health4j.api.impl.common.AbstractHealthChecker">
+      <SourceLine classname="com.freedom.health4j.api.impl.common.AbstractHealthChecker" start="21" end="138" sourcefile="AbstractHealthChecker.java" sourcepath="com/freedom/health4j/api/impl/common/AbstractHealthChecker.java"/>
+    </Class>
+    <Method classname="com.freedom.health4j.api.impl.common.AbstractHealthChecker" name="translateFromStream" signature="(Ljava/io/InputStream;)Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="com.freedom.health4j.api.impl.common.AbstractHealthChecker" start="119" end="128" startBytecode="0" endBytecode="196" sourcefile="AbstractHealthChecker.java" sourcepath="com/freedom/health4j/api/impl/common/AbstractHealthChecker.java"/>
+    </Method>
+    <Method classname="java.lang.String" name="&lt;init&gt;" signature="([BII)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="534" end="537" startBytecode="0" endBytecode="65" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Method>
+    <SourceLine classname="com.freedom.health4j.api.impl.common.AbstractHealthChecker" start="125" end="125" startBytecode="47" endBytecode="47" sourcefile="AbstractHealthChecker.java" sourcepath="com/freedom/health4j/api/impl/common/AbstractHealthChecker.java"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL">
+    <Class classname="com.freedom.health4j.api.impl.common.AbstractHealthChecker">
+      <SourceLine classname="com.freedom.health4j.api.impl.common.AbstractHealthChecker" start="21" end="138" sourcefile="AbstractHealthChecker.java" sourcepath="com/freedom/health4j/api/impl/common/AbstractHealthChecker.java"/>
+    </Class>
+    <Method classname="com.freedom.health4j.api.impl.common.AbstractHealthChecker" name="&lt;init&gt;" signature="(Ljava/lang/String;Ljava/util/Map;)V" isStatic="false">
+      <SourceLine classname="com.freedom.health4j.api.impl.common.AbstractHealthChecker" start="32" end="62" startBytecode="0" endBytecode="537" sourcefile="AbstractHealthChecker.java" sourcepath="com/freedom/health4j/api/impl/common/AbstractHealthChecker.java"/>
+    </Method>
+    <Class classname="java.io.InputStream" role="CLASS_REFTYPE">
+      <SourceLine classname="java.io.InputStream" start="45" end="363" sourcefile="InputStream.java" sourcepath="java/io/InputStream.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="com.freedom.health4j.api.impl.common.AbstractHealthChecker" start="40" end="40" startBytecode="88" endBytecode="88" sourcefile="AbstractHealthChecker.java" sourcepath="com/freedom/health4j/api/impl/common/AbstractHealthChecker.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="com.freedom.health4j.api.impl.common.AbstractHealthChecker" start="41" end="41" startBytecode="93" endBytecode="93" sourcefile="AbstractHealthChecker.java" sourcepath="com/freedom/health4j/api/impl/common/AbstractHealthChecker.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="com.freedom.health4j.api.impl.common.AbstractHealthChecker" start="44" end="44" startBytecode="102" endBytecode="102" sourcefile="AbstractHealthChecker.java" sourcepath="com/freedom/health4j/api/impl/common/AbstractHealthChecker.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="com.freedom.health4j.api.impl.common.AbstractHealthChecker" start="46" end="46" startBytecode="112" endBytecode="112" sourcefile="AbstractHealthChecker.java" sourcepath="com/freedom/health4j/api/impl/common/AbstractHealthChecker.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="com.freedom.health4j.api.impl.common.AbstractHealthChecker" start="48" end="48" startBytecode="136" endBytecode="136" sourcefile="AbstractHealthChecker.java" sourcepath="com/freedom/health4j/api/impl/common/AbstractHealthChecker.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="com.freedom.health4j.api.impl.common.AbstractHealthChecker" start="49" end="49" startBytecode="152" endBytecode="152" sourcefile="AbstractHealthChecker.java" sourcepath="com/freedom/health4j/api/impl/common/AbstractHealthChecker.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="com.freedom.health4j.api.impl.common.AbstractHealthChecker" start="53" end="53" startBytecode="176" endBytecode="176" sourcefile="AbstractHealthChecker.java" sourcepath="com/freedom/health4j/api/impl/common/AbstractHealthChecker.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="com.freedom.health4j.api.impl.common.AbstractHealthChecker" start="54" end="54" startBytecode="192" endBytecode="192" sourcefile="AbstractHealthChecker.java" sourcepath="com/freedom/health4j/api/impl/common/AbstractHealthChecker.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="com.freedom.health4j.api.impl.common.AbstractHealthChecker" start="58" end="58" startBytecode="216" endBytecode="216" sourcefile="AbstractHealthChecker.java" sourcepath="com/freedom/health4j/api/impl/common/AbstractHealthChecker.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="com.freedom.health4j.api.impl.common.AbstractHealthChecker" start="59" end="59" startBytecode="232" endBytecode="232" sourcefile="AbstractHealthChecker.java" sourcepath="com/freedom/health4j/api/impl/common/AbstractHealthChecker.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="com.freedom.health4j.api.impl.common.AbstractHealthChecker" start="62" end="62" startBytecode="256" endBytecode="256" sourcefile="AbstractHealthChecker.java" sourcepath="com/freedom/health4j/api/impl/common/AbstractHealthChecker.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{InputStream x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="OS_OPEN_STREAM" priority="2" rank="16" abbrev="OS" category="BAD_PRACTICE">
+    <Class classname="com.freedom.health4j.api.impl.common.AbstractHealthChecker">
+      <SourceLine classname="com.freedom.health4j.api.impl.common.AbstractHealthChecker" start="21" end="138" sourcefile="AbstractHealthChecker.java" sourcepath="com/freedom/health4j/api/impl/common/AbstractHealthChecker.java"/>
+    </Class>
+    <Method classname="com.freedom.health4j.api.impl.common.AbstractHealthChecker" name="&lt;init&gt;" signature="(Ljava/lang/String;Ljava/util/Map;)V" isStatic="false">
+      <SourceLine classname="com.freedom.health4j.api.impl.common.AbstractHealthChecker" start="32" end="62" startBytecode="0" endBytecode="106" sourcefile="AbstractHealthChecker.java" sourcepath="com/freedom/health4j/api/impl/common/AbstractHealthChecker.java"/>
+    </Method>
+    <Type descriptor="Ljava/io/InputStream;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.io.InputStream" start="45" end="363" sourcefile="InputStream.java" sourcepath="java/io/InputStream.java"/>
+    </Type>
+    <SourceLine classname="com.freedom.health4j.api.impl.common.AbstractHealthChecker" start="40" end="40" startBytecode="83" endBytecode="83" sourcefile="AbstractHealthChecker.java" sourcepath="com/freedom/health4j/api/impl/common/AbstractHealthChecker.java"/>
+  </BugInstance>
+  <BugInstance type="DM_BOXED_PRIMITIVE_FOR_PARSING" priority="1" rank="16" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="com.freedom.health4j.api.impl.common.EmailNotifier">
+      <SourceLine classname="com.freedom.health4j.api.impl.common.EmailNotifier" start="21" end="66" sourcefile="EmailNotifier.java" sourcepath="com/freedom/health4j/api/impl/common/EmailNotifier.java"/>
+    </Class>
+    <Method classname="com.freedom.health4j.api.impl.common.EmailNotifier" name="doNotify" signature="()V" isStatic="false">
+      <SourceLine classname="com.freedom.health4j.api.impl.common.EmailNotifier" start="32" end="66" startBytecode="0" endBytecode="543" sourcefile="EmailNotifier.java" sourcepath="com/freedom/health4j/api/impl/common/EmailNotifier.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="intValue" signature="()I" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="701" end="701" startBytecode="0" endBytecode="28" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="parseInt" signature="(Ljava/lang/String;)I" isStatic="true" role="SHOULD_CALL"/>
+    <SourceLine classname="com.freedom.health4j.api.impl.common.EmailNotifier" start="35" end="35" startBytecode="34" endBytecode="34" sourcefile="EmailNotifier.java" sourcepath="com/freedom/health4j/api/impl/common/EmailNotifier.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N">
+    <Class classname="com.freedom.health4j.api.impl.common.EmailNotifier">
+      <SourceLine classname="com.freedom.health4j.api.impl.common.EmailNotifier" start="21" end="66" sourcefile="EmailNotifier.java" sourcepath="com/freedom/health4j/api/impl/common/EmailNotifier.java"/>
+    </Class>
+    <Method classname="com.freedom.health4j.api.impl.common.EmailNotifier" name="doNotify" signature="()V" isStatic="false">
+      <SourceLine classname="com.freedom.health4j.api.impl.common.EmailNotifier" start="32" end="66" startBytecode="0" endBytecode="543" sourcefile="EmailNotifier.java" sourcepath="com/freedom/health4j/api/impl/common/EmailNotifier.java"/>
+    </Method>
+    <Method classname="java.lang.String" name="&lt;init&gt;" signature="([B)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="556" end="557" startBytecode="0" endBytecode="36" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Method>
+    <SourceLine classname="com.freedom.health4j.api.impl.common.EmailNotifier" start="54" end="54" startBytecode="206" endBytecode="206" sourcefile="EmailNotifier.java" sourcepath="com/freedom/health4j/api/impl/common/EmailNotifier.java"/>
+  </BugInstance>
+  <BugInstance type="DM_BOXED_PRIMITIVE_FOR_PARSING" priority="1" rank="16" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="com.freedom.health4j.api.impl.findBugs.FindBugsHealthChecker">
+      <SourceLine classname="com.freedom.health4j.api.impl.findBugs.FindBugsHealthChecker" start="19" end="91" sourcefile="FindBugsHealthChecker.java" sourcepath="com/freedom/health4j/api/impl/findBugs/FindBugsHealthChecker.java"/>
+    </Class>
+    <Method classname="com.freedom.health4j.api.impl.findBugs.FindBugsHealthChecker" name="extract" signature="()Ljava/util/Collection;" isStatic="false">
+      <SourceLine classname="com.freedom.health4j.api.impl.findBugs.FindBugsHealthChecker" start="61" end="91" startBytecode="0" endBytecode="570" sourcefile="FindBugsHealthChecker.java" sourcepath="com/freedom/health4j/api/impl/findBugs/FindBugsHealthChecker.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="intValue" signature="()I" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="701" end="701" startBytecode="0" endBytecode="28" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="parseInt" signature="(Ljava/lang/String;)I" isStatic="true" role="SHOULD_CALL"/>
+    <SourceLine classname="com.freedom.health4j.api.impl.findBugs.FindBugsHealthChecker" start="78" end="78" startBytecode="163" endBytecode="163" sourcefile="FindBugsHealthChecker.java" sourcepath="com/freedom/health4j/api/impl/findBugs/FindBugsHealthChecker.java"/>
+    <SourceLine classname="com.freedom.health4j.api.impl.findBugs.FindBugsHealthChecker" start="79" end="79" startBytecode="183" endBytecode="183" sourcefile="FindBugsHealthChecker.java" sourcepath="com/freedom/health4j/api/impl/findBugs/FindBugsHealthChecker.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <BugInstance type="DM_BOXED_PRIMITIVE_FOR_PARSING" priority="1" rank="16" abbrev="Bx" category="PERFORMANCE">
+    <Class classname="com.freedom.health4j.api.impl.pmd.PmdHealthChecker">
+      <SourceLine classname="com.freedom.health4j.api.impl.pmd.PmdHealthChecker" start="19" end="101" sourcefile="PmdHealthChecker.java" sourcepath="com/freedom/health4j/api/impl/pmd/PmdHealthChecker.java"/>
+    </Class>
+    <Method classname="com.freedom.health4j.api.impl.pmd.PmdHealthChecker" name="extract" signature="()Ljava/util/Collection;" isStatic="false">
+      <SourceLine classname="com.freedom.health4j.api.impl.pmd.PmdHealthChecker" start="64" end="101" startBytecode="0" endBytecode="751" sourcefile="PmdHealthChecker.java" sourcepath="com/freedom/health4j/api/impl/pmd/PmdHealthChecker.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="intValue" signature="()I" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.Integer" start="701" end="701" startBytecode="0" endBytecode="28" sourcefile="Integer.java" sourcepath="java/lang/Integer.java"/>
+    </Method>
+    <Method classname="java.lang.Integer" name="parseInt" signature="(Ljava/lang/String;)I" isStatic="true" role="SHOULD_CALL"/>
+    <SourceLine classname="com.freedom.health4j.api.impl.pmd.PmdHealthChecker" start="85" end="85" startBytecode="177" endBytecode="177" sourcefile="PmdHealthChecker.java" sourcepath="com/freedom/health4j/api/impl/pmd/PmdHealthChecker.java"/>
+    <SourceLine classname="com.freedom.health4j.api.impl.pmd.PmdHealthChecker" start="86" end="86" startBytecode="197" endBytecode="197" sourcefile="PmdHealthChecker.java" sourcepath="com/freedom/health4j/api/impl/pmd/PmdHealthChecker.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+    <SourceLine classname="com.freedom.health4j.api.impl.pmd.PmdHealthChecker" start="87" end="87" startBytecode="217" endBytecode="217" sourcefile="PmdHealthChecker.java" sourcepath="com/freedom/health4j/api/impl/pmd/PmdHealthChecker.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+    <SourceLine classname="com.freedom.health4j.api.impl.pmd.PmdHealthChecker" start="88" end="88" startBytecode="237" endBytecode="237" sourcefile="PmdHealthChecker.java" sourcepath="com/freedom/health4j/api/impl/pmd/PmdHealthChecker.java" role="SOURCE_LINE_ANOTHER_INSTANCE"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP" priority="2" rank="18" abbrev="EI" category="MALICIOUS_CODE">
+    <Class classname="com.freedom.health4j.model.ReportInfo">
+      <SourceLine classname="com.freedom.health4j.model.ReportInfo" start="21" end="78" sourcefile="ReportInfo.java" sourcepath="com/freedom/health4j/model/ReportInfo.java"/>
+    </Class>
+    <Method classname="com.freedom.health4j.model.ReportInfo" name="getGeneratedDate" signature="()Ljava/util/Date;" isStatic="false">
+      <SourceLine classname="com.freedom.health4j.model.ReportInfo" start="49" end="49" startBytecode="0" endBytecode="46" sourcefile="ReportInfo.java" sourcepath="com/freedom/health4j/model/ReportInfo.java"/>
+    </Method>
+    <Field classname="com.freedom.health4j.model.ReportInfo" name="generatedDate" signature="Ljava/util/Date;" isStatic="false">
+      <SourceLine classname="com.freedom.health4j.model.ReportInfo" sourcefile="ReportInfo.java" sourcepath="com/freedom/health4j/model/ReportInfo.java"/>
+    </Field>
+    <SourceLine classname="com.freedom.health4j.model.ReportInfo" start="49" end="49" startBytecode="4" endBytecode="4" sourcefile="ReportInfo.java" sourcepath="com/freedom/health4j/model/ReportInfo.java"/>
+  </BugInstance>
+  <BugInstance type="EI_EXPOSE_REP2" priority="2" rank="18" abbrev="EI2" category="MALICIOUS_CODE">
+    <Class classname="com.freedom.health4j.model.ReportInfo">
+      <SourceLine classname="com.freedom.health4j.model.ReportInfo" start="21" end="78" sourcefile="ReportInfo.java" sourcepath="com/freedom/health4j/model/ReportInfo.java"/>
+    </Class>
+    <Method classname="com.freedom.health4j.model.ReportInfo" name="setGeneratedDate" signature="(Ljava/util/Date;)V" isStatic="false">
+      <SourceLine classname="com.freedom.health4j.model.ReportInfo" start="53" end="54" startBytecode="0" endBytecode="61" sourcefile="ReportInfo.java" sourcepath="com/freedom/health4j/model/ReportInfo.java"/>
+    </Method>
+    <Field classname="com.freedom.health4j.model.ReportInfo" name="generatedDate" signature="Ljava/util/Date;" isStatic="false">
+      <SourceLine classname="com.freedom.health4j.model.ReportInfo" sourcefile="ReportInfo.java" sourcepath="com/freedom/health4j/model/ReportInfo.java"/>
+    </Field>
+    <LocalVariable name="generatedDate" register="1" pc="2" role="LOCAL_VARIABLE_NAMED"/>
+    <SourceLine classname="com.freedom.health4j.model.ReportInfo" start="53" end="53" startBytecode="2" endBytecode="2" sourcefile="ReportInfo.java" sourcepath="com/freedom/health4j/model/ReportInfo.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="12">
+    <MissingClass>org.apache.commons.logging.Log</MissingClass>
+    <MissingClass>org.apache.commons.logging.LogFactory</MissingClass>
+    <MissingClass>org.apache.commons.mail.EmailException</MissingClass>
+    <MissingClass>org.apache.commons.mail.HtmlEmail</MissingClass>
+    <MissingClass>org.apache.velocity.Template</MissingClass>
+    <MissingClass>org.apache.velocity.VelocityContext</MissingClass>
+    <MissingClass>org.apache.velocity.app.VelocityEngine</MissingClass>
+    <MissingClass>org.dom4j.Document</MissingClass>
+    <MissingClass>org.dom4j.DocumentException</MissingClass>
+    <MissingClass>org.dom4j.Element</MissingClass>
+    <MissingClass>org.dom4j.Node</MissingClass>
+    <MissingClass>org.dom4j.io.SAXReader</MissingClass>
+  </Errors>
+  <FindBugsSummary timestamp="Sat, 24 Jan 2015 18:18:35 +0800" total_classes="20" referenced_classes="87" total_bugs="11" total_size="666" num_packages="8" java_version="1.7.0_45" vm_version="24.45-b08" cpu_seconds="23.74" clock_seconds="8.48" peak_mbytes="108.43" alloc_mbytes="683.00" gc_seconds="0.08" priority_2="4" priority_1="7">
+    <PackageStats package="com.freedom.health4j" total_bugs="1" total_types="2" total_size="121" priority_1="1">
+      <ClassStats class="com.freedom.health4j.App" sourceFile="App.java" interface="false" size="105" bugs="1" priority_1="1"/>
+      <ClassStats class="com.freedom.health4j.Constants" sourceFile="Constants.java" interface="false" size="16" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.freedom.health4j.api" total_bugs="0" total_types="7" total_size="13">
+      <ClassStats class="com.freedom.health4j.api.CommandInvoker" sourceFile="CommandInvoker.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.freedom.health4j.api.EnvVerifier" sourceFile="EnvVerifier.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.freedom.health4j.api.HealthChecker" sourceFile="HealthChecker.java" interface="true" size="1" bugs="0"/>
+      <ClassStats class="com.freedom.health4j.api.ReportExtractor" sourceFile="ReportExtractor.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.freedom.health4j.api.ReportMerger" sourceFile="ReportMerger.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.freedom.health4j.api.ReportNotifier" sourceFile="ReportNotifier.java" interface="true" size="2" bugs="0"/>
+      <ClassStats class="com.freedom.health4j.api.Tool" sourceFile="Tool.java" interface="true" size="2" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.freedom.health4j.api.impl.checkStyle" total_bugs="1" total_types="1" total_size="58" priority_1="1">
+      <ClassStats class="com.freedom.health4j.api.impl.checkStyle.CheckStyleHealthChecker" sourceFile="CheckStyleHealthChecker.java" interface="false" size="58" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <PackageStats package="com.freedom.health4j.api.impl.common" total_bugs="5" total_types="3" total_size="165" priority_2="2" priority_1="3">
+      <ClassStats class="com.freedom.health4j.api.impl.common.AbstractHealthChecker" sourceFile="AbstractHealthChecker.java" interface="false" size="83" bugs="3" priority_2="2" priority_1="1"/>
+      <ClassStats class="com.freedom.health4j.api.impl.common.DefaultMerger" sourceFile="DefaultMerger.java" interface="false" size="47" bugs="0"/>
+      <ClassStats class="com.freedom.health4j.api.impl.common.EmailNotifier" sourceFile="EmailNotifier.java" interface="false" size="35" bugs="2" priority_1="2"/>
+    </PackageStats>
+    <PackageStats package="com.freedom.health4j.api.impl.findBugs" total_bugs="1" total_types="1" total_size="52" priority_1="1">
+      <ClassStats class="com.freedom.health4j.api.impl.findBugs.FindBugsHealthChecker" sourceFile="FindBugsHealthChecker.java" interface="false" size="52" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <PackageStats package="com.freedom.health4j.api.impl.pmd" total_bugs="1" total_types="1" total_size="59" priority_1="1">
+      <ClassStats class="com.freedom.health4j.api.impl.pmd.PmdHealthChecker" sourceFile="PmdHealthChecker.java" interface="false" size="59" bugs="1" priority_1="1"/>
+    </PackageStats>
+    <PackageStats package="com.freedom.health4j.model" total_bugs="2" total_types="3" total_size="122" priority_2="2">
+      <ClassStats class="com.freedom.health4j.model.BaseModel" sourceFile="BaseModel.java" interface="false" size="4" bugs="0"/>
+      <ClassStats class="com.freedom.health4j.model.ReportInfo" sourceFile="ReportInfo.java" interface="false" size="46" bugs="2" priority_2="2"/>
+      <ClassStats class="com.freedom.health4j.model.ReportItem" sourceFile="ReportItem.java" interface="false" size="72" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="com.freedom.health4j.util" total_bugs="0" total_types="2" total_size="76">
+      <ClassStats class="com.freedom.health4j.util.ClazzUtil" sourceFile="ClazzUtil.java" interface="false" size="70" bugs="0"/>
+      <ClassStats class="com.freedom.health4j.util.ClazzUtil$1" sourceFile="ClazzUtil.java" interface="false" size="6" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="947" invocations="639" avgMicrosecondsPerInvocation="1482" maxMicrosecondsPerInvocation="33127" standardDeviationMircosecondsPerInvocation="3310"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="596" invocations="323" avgMicrosecondsPerInvocation="1847" maxMicrosecondsPerInvocation="22910" standardDeviationMircosecondsPerInvocation="2908"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ValueNumberDataflowFactory" totalMilliseconds="573" invocations="97" avgMicrosecondsPerInvocation="5911" maxMicrosecondsPerInvocation="99312" standardDeviationMircosecondsPerInvocation="16970"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="566" invocations="87" avgMicrosecondsPerInvocation="6515" maxMicrosecondsPerInvocation="84699" standardDeviationMircosecondsPerInvocation="13246"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.TypeDataflowFactory" totalMilliseconds="457" invocations="96" avgMicrosecondsPerInvocation="4769" maxMicrosecondsPerInvocation="57093" standardDeviationMircosecondsPerInvocation="10198"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.UnconditionalValueDerefDataflowFactory" totalMilliseconds="387" invocations="86" avgMicrosecondsPerInvocation="4509" maxMicrosecondsPerInvocation="52739" standardDeviationMircosecondsPerInvocation="9069"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.IsNullValueDataflowFactory" totalMilliseconds="384" invocations="89" avgMicrosecondsPerInvocation="4320" maxMicrosecondsPerInvocation="56538" standardDeviationMircosecondsPerInvocation="9039"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="383" invocations="86" avgMicrosecondsPerInvocation="4453" maxMicrosecondsPerInvocation="35616" standardDeviationMircosecondsPerInvocation="7724"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.CFGFactory" totalMilliseconds="228" invocations="89" avgMicrosecondsPerInvocation="2564" maxMicrosecondsPerInvocation="27591" standardDeviationMircosecondsPerInvocation="5193"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindRefComparison$SpecialTypeAnalysis" totalMilliseconds="185" invocations="53" avgMicrosecondsPerInvocation="3501" maxMicrosecondsPerInvocation="34898" standardDeviationMircosecondsPerInvocation="6221"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="177" invocations="584" avgMicrosecondsPerInvocation="304" maxMicrosecondsPerInvocation="6539" standardDeviationMircosecondsPerInvocation="657"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.BuildObligationPolicyDatabase" totalMilliseconds="170" invocations="87" avgMicrosecondsPerInvocation="1963" maxMicrosecondsPerInvocation="17184" standardDeviationMircosecondsPerInvocation="3158"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.NoteDirectlyRelevantTypeQualifiers" totalMilliseconds="140" invocations="87" avgMicrosecondsPerInvocation="1610" maxMicrosecondsPerInvocation="20404" standardDeviationMircosecondsPerInvocation="3066"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="134" invocations="642" avgMicrosecondsPerInvocation="209" maxMicrosecondsPerInvocation="1829" standardDeviationMircosecondsPerInvocation="117"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.JavaClassAnalysisEngine" totalMilliseconds="124" invocations="118" avgMicrosecondsPerInvocation="1052" maxMicrosecondsPerInvocation="24964" standardDeviationMircosecondsPerInvocation="2720"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FunctionsThatMightBeMistakenForProcedures" totalMilliseconds="107" invocations="87" avgMicrosecondsPerInvocation="1232" maxMicrosecondsPerInvocation="17571" standardDeviationMircosecondsPerInvocation="2669"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.OverridingEqualsNotSymmetrical" totalMilliseconds="105" invocations="87" avgMicrosecondsPerInvocation="1210" maxMicrosecondsPerInvocation="15447" standardDeviationMircosecondsPerInvocation="2521"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.MethodGenFactory" totalMilliseconds="101" invocations="95" avgMicrosecondsPerInvocation="1069" maxMicrosecondsPerInvocation="74086" standardDeviationMircosecondsPerInvocation="7541"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.bcel.ConstantDataflowFactory" totalMilliseconds="98" invocations="89" avgMicrosecondsPerInvocation="1110" maxMicrosecondsPerInvocation="18024" standardDeviationMircosecondsPerInvocation="2731"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

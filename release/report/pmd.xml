@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="5.1.2" timestamp="2015-01-24T17:51:35.224">
+<file name="/Users/yanghua/Documents/GitHub/health4j/src/main/java/com/freedom/health4j/api/impl/checkStyle/CheckStyleHealthChecker.java">
+<violation beginline="59" endline="61" begincolumn="12" endcolumn="5" rule="UselessOverridingMethod" ruleset="Unnecessary" package="com.freedom.health4j.api.impl.checkStyle" class="CheckStyleHealthChecker" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.2/rules/java/unnecessary.html#UselessOverridingMethod" priority="3">
+Overriding method merely calls super
+</violation>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/src/main/java/com/freedom/health4j/api/impl/findBugs/FindBugsHealthChecker.java">
+<violation beginline="55" endline="57" begincolumn="12" endcolumn="5" rule="UselessOverridingMethod" ruleset="Unnecessary" package="com.freedom.health4j.api.impl.findBugs" class="FindBugsHealthChecker" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.2/rules/java/unnecessary.html#UselessOverridingMethod" priority="3">
+Overriding method merely calls super
+</violation>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/src/main/java/com/freedom/health4j/api/impl/pmd/PmdHealthChecker.java">
+<violation beginline="41" endline="43" begincolumn="12" endcolumn="5" rule="UselessOverridingMethod" ruleset="Unnecessary" package="com.freedom.health4j.api.impl.pmd" class="PmdHealthChecker" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.2/rules/java/unnecessary.html#UselessOverridingMethod" priority="3">
+Overriding method merely calls super
+</violation>
+</file>
+<file name="/Users/yanghua/Documents/GitHub/health4j/src/main/java/com/freedom/health4j/util/ClazzUtil.java">
+<violation beginline="40" endline="40" begincolumn="25" endcolumn="59" rule="UselessParentheses" ruleset="Unnecessary" package="com.freedom.health4j.util" class="ClazzUtil" method="accept" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.2/rules/java/unnecessary.html#UselessParentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="41" endline="41" begincolumn="22" endcolumn="58" rule="UselessParentheses" ruleset="Unnecessary" package="com.freedom.health4j.util" class="ClazzUtil" method="accept" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.2/rules/java/unnecessary.html#UselessParentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="119" endline="119" begincolumn="34" endcolumn="42" rule="UselessParentheses" ruleset="Unnecessary" package="com.freedom.health4j.util" class="ClazzUtil" method="traverse" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.2/rules/java/unnecessary.html#UselessParentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="120" endline="133" begincolumn="33" endcolumn="33" rule="CollapsibleIfStatements" ruleset="Basic" package="com.freedom.health4j.util" class="ClazzUtil" method="traverse" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.1.2/rules/java/basic.html#CollapsibleIfStatements" priority="3">
+These nested if statements could be combined
+</violation>
+</file>
+</pmd>

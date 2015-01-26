@@ -22,8 +22,7 @@ public class EmailNotifier implements ReportNotifier {
 
     private Properties commonConfig;
 
-    public EmailNotifier(Properties commonConfig) {
-        this.commonConfig = commonConfig;
+    public EmailNotifier() {
     }
 
     @Override
@@ -31,26 +30,26 @@ public class EmailNotifier implements ReportNotifier {
         try {
             HtmlEmail email = new HtmlEmail();
 
-            email.setHostName(commonConfig.getProperty("health4j.email.host"));
-            email.setSmtpPort(Integer.valueOf(commonConfig.getProperty("health4j.email.port")));
+            email.setHostName(getCommonConfig().getProperty("health4j.email.host"));
+            email.setSmtpPort(Integer.valueOf(getCommonConfig().getProperty("health4j.email.port")));
 
-            String authName = commonConfig.getProperty("health4j.email.auth.name");
-            String authPwd = commonConfig.getProperty("health4j.email.auth.password");
+            String authName = getCommonConfig().getProperty("health4j.email.auth.name");
+            String authPwd = getCommonConfig().getProperty("health4j.email.auth.password");
             email.setAuthentication(authName, authPwd);
 
             email.setCharset("UTF-8");
-            String subject = commonConfig.getProperty("health4j.email.subject");
-            email.setSubject(commonConfig.getProperty(Constants.COMMON_PROJECT_KEY) + "-" + subject);
+            String subject = getCommonConfig().getProperty("health4j.email.subject");
+            email.setSubject(getCommonConfig().getProperty(Constants.COMMON_PROJECT_KEY) + "-" + subject);
 
-            email.addTo(commonConfig.getProperty("health4j.email.to"));
-            email.setFrom(commonConfig.getProperty("health4j.email.from"));
+            email.addTo(getCommonConfig().getProperty("health4j.email.to"));
+            email.setFrom(getCommonConfig().getProperty("health4j.email.from"));
 
-            String cc = commonConfig.getProperty("health4j.email.cc");
+            String cc = getCommonConfig().getProperty("health4j.email.cc");
             if (cc != null && cc.length() > 0)
                 email.addCc(cc);
 
-            String reportBasePathStr = commonConfig.getProperty(Constants.COMMON_REPORT_BASE_PATH_KEY);
-            String reportPathStr = commonConfig.getProperty(Constants.COMMON_REPORT_PATH_KEY);
+            String reportBasePathStr = getCommonConfig().getProperty(Constants.COMMON_REPORT_BASE_PATH_KEY);
+            String reportPathStr = getCommonConfig().getProperty(Constants.COMMON_REPORT_PATH_KEY);
             Path reportPath = Paths.get(reportBasePathStr, reportPathStr);
 
             String htmlContent = new String(Files.readAllBytes(reportPath));
@@ -64,8 +63,15 @@ public class EmailNotifier implements ReportNotifier {
         } catch (EmailException | IOException e) {
             throw new RuntimeException(e.toString());
         }
-
     }
 
+    @Override
+    public Properties getCommonConfig() {
+        return commonConfig;
+    }
 
+    @Override
+    public void setCommonConfig(Properties commonConfig) {
+        this.commonConfig = commonConfig;
+    }
 }

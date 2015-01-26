@@ -26,25 +26,21 @@ public class DefaultMerger implements ReportMerger {
     private static final Log logger = LogFactory.getLog(DefaultMerger.class);
 
     private Properties commonConfig;
-    private String     templateDirPathStr;
-    private String     templateFileName;
 
-    public DefaultMerger(Properties commonConfig) {
-        this.commonConfig = commonConfig;
-        this.templateDirPathStr = this.commonConfig.getProperty(Constants.COMMON_CONF_BASE_PATH_KEY);
-        this.templateFileName = this.commonConfig.getProperty(Constants.COMMON_REPORT_TEMPLATE_KEY);
+    public DefaultMerger() {
     }
 
     @Override
     public void merge(ReportInfo reportInfo) {
         VelocityEngine engine = getRenderEngine();
+        String templateFileName = getCommonConfig().getProperty(Constants.COMMON_REPORT_TEMPLATE_KEY);
         Template reportTemplate = engine.getTemplate(templateFileName);
         VelocityContext ctx = new VelocityContext();
 
         ctx.put("reportInfo", reportInfo);
 
-        String reportBasePathStr = commonConfig.getProperty(Constants.COMMON_REPORT_BASE_PATH_KEY);
-        String reportPathStr = commonConfig.getProperty(Constants.COMMON_REPORT_PATH_KEY);
+        String reportBasePathStr = getCommonConfig().getProperty(Constants.COMMON_REPORT_BASE_PATH_KEY);
+        String reportPathStr = getCommonConfig().getProperty(Constants.COMMON_REPORT_PATH_KEY);
         Path reportPath = Paths.get(reportBasePathStr, reportPathStr);
 
         BufferedWriter writer = null;
@@ -72,6 +68,7 @@ public class DefaultMerger implements ReportMerger {
 
     private VelocityEngine getRenderEngine() {
         VelocityEngine engine = new VelocityEngine();
+        String templateDirPathStr = this.commonConfig.getProperty(Constants.COMMON_CONF_BASE_PATH_KEY);
 
         engine.setProperty("runtime.log.logsystem.class", "org.apache.velocity.runtime.log.NullLogSystem");
         engine.setProperty("resource.loader", "file");
@@ -84,5 +81,13 @@ public class DefaultMerger implements ReportMerger {
         engine.init();
 
         return engine;
+    }
+
+    public Properties getCommonConfig() {
+        return commonConfig;
+    }
+
+    public void setCommonConfig(Properties commonConfig) {
+        this.commonConfig = commonConfig;
     }
 }

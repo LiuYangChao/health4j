@@ -4,8 +4,6 @@ import com.freedom.health4j.api.HealthChecker;
 import com.freedom.health4j.api.ReportMerger;
 import com.freedom.health4j.api.ReportNotifier;
 import com.freedom.health4j.api.Tool;
-import com.freedom.health4j.api.impl.common.DefaultMerger;
-import com.freedom.health4j.api.impl.common.EmailNotifier;
 import com.freedom.health4j.model.ReportInfo;
 import com.freedom.health4j.model.ReportItem;
 import com.freedom.health4j.util.ClazzUtil;
@@ -22,7 +20,6 @@ import java.lang.reflect.Constructor;
 import java.nio.file.Paths;
 import java.util.*;
 import java.util.concurrent.*;
-
 
 /**
  * the main class.
@@ -45,16 +42,10 @@ public class App {
         ReportInfo reportInfo = checkup(checkers);
 
         //merge
-        if (Boolean.valueOf(commonConfig.getProperty(Constants.COMMON_ENABLE_MERGE_KEY))) {
-            ReportMerger merger = new DefaultMerger(commonConfig);
-            merger.merge(reportInfo);
-        }
+        merge(reportInfo);
 
         //notify
-        if (Boolean.valueOf(commonConfig.getProperty(Constants.COMMON_ENABLE_NOTIFY_KEY))) {
-            ReportNotifier notifier = new EmailNotifier(commonConfig);
-            notifier.doNotify();
-        }
+        doNotify();
     }
 
     private static Properties loadConfig(String[] args) {
@@ -187,5 +178,35 @@ public class App {
         reportInfo.setAnalysisTools(commonConfig.getProperty(Constants.COMMON_TOOLS_KEY));
 
         return reportInfo;
+    }
+
+    private static void merge(ReportInfo reportInfo) {
+        if (Boolean.valueOf(commonConfig.getProperty(Constants.COMMON_ENABLE_MERGE_KEY))) {
+            ServiceLoader<ReportMerger> serviceLoader = ServiceLoader.load(ReportMerger.class);
+            Iterator<ReportMerger> mergerIterator = serviceLoader.iterator();
+
+            if (!mergerIterator.hasNext()) {
+                throw new RuntimeException("can not load service provider for service : ReportMerger");
+            }
+
+            ReportMerger merger = mergerIterator.next();
+            merger.setCommonConfig(commonConfig);
+            merger.merge(reportInfo);
+        }
+    }
+
+    private static void doNotify() {
+        if (Boolean.valueOf(commonConfig.getProperty(Constants.COMMON_ENABLE_NOTIFY_KEY))) {
+            ServiceLoader<ReportNotifier> serviceLoader = ServiceLoader.load(ReportNotifier.class);
+            Iterator<ReportNotifier> notifierIterator = serviceLoader.iterator();
+
+            if (!notifierIterator.hasNext()) {
+                throw new RuntimeException("can not load service provider for ReportNotifier");
+            }
+
+            ReportNotifier notifier = notifierIterator.next();
+            notifier.setCommonConfig(commonConfig);
+            notifier.doNotify();
+        }
     }
 }

@@ -5,12 +5,12 @@ NAME=health4j
 USER=root
 PID_PATH=/var/run
 HEALTH4J_HOME=/usr/local/health4j
+COMMON_CONFIG_FILE=$HEALTH4J_HOME/conf/common.properties
 JAR_FILE=$HEALTH4J_HOME/start.jar
 LOG_PROPERTY_PATH=$HEALTH4J_HOME/conf/log4j.properties
-EXCEPTION="Usage: health4j {start|stop|restart|check|status}"
+EXCEPTION="Usage: health4j {start|check|status}"
 RETVAL=0
-HEALTH4J=$PID_PATH/$NAME.pid
-HEALTH4J_STOP_PID=$PID_PATH/$NAME_stop.pid
+HEALTH4J_PID=$PID_PATH/$NAME.pid
 
 usage()
 {
@@ -42,30 +42,9 @@ start() {
         exit 1
       fi
 
-      start-stop-daemon -S -p$HEALTH4J_PID -c$USER -b -m -a /usr/bin/java -- -jar $JAR_FILE cmd=start serverLog4jPropertyPath=$LOG_PROPERTY_PATH
+      start-stop-daemon -S -p$HEALTH4J_PID -c$USER -b -m -a /usr/bin/java -- -jar $JAR_FILE $COMMON_CONFIG_FILE
       RETVAL=$?
       echo "started."
-}
-stop() {
-      echo -n "Stopping health4j ..."
-      #use a new pid to specify stop action, then kill it right now!
-      start-stop-daemon -S -p$HEALTH4J_STOP_PID -c$USER -b -m -a /usr/bin/java -- -jar $JAR_FILE cmd=stop serverLog4jPropertyPath=$LOG_PROPERTY_PATH
-      sleep 3
-
-      if running "$HEALTH4J_PID"
-      then
-        start-stop-daemon -K -p$HEALTH4J_PID -a /usr/bin/java -s KILL
-        rm -f $HEALTH4J_PID
-      fi
-
-      if running "$HEALTH4J_STOP_PID"
-      then
-        start-stop-daemon -K -p$HEALTH4J_STOP_PID -a /usr/bin/java -s KILL
-        rm -f $HEALTH4J_STOP_PID
-      fi
-
-      RETVAL=$?
-      echo "stopped."
 }
 
 # COMMANDS
@@ -73,17 +52,10 @@ case "$1" in
     start)
       start
   ;;
-    stop)
-      stop
-  ;;
-    restart)
-      stop
-        sleep 10
-      start
-  ;;
     check|status)
       echo "Checking arguments to health4j: "
       echo "HEALTH4J_HOME          =  $HEALTH4J_HOME"
+      echo "COMMON_CONFIG_FILE     =  $COMMON_CONFIG_FILE"
       echo "JAR_PATH               =  $JAR_FILE"
       echo "HEALTH4J_PID           =  $HEALTH4J_PID"
       echo "HEALTH4J_LOG_CONFIG    =  $LOG_PROPERTY_PATH"

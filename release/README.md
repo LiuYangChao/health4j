@@ -56,6 +56,8 @@ service health4j start
 service health4j status
 ```
 
+![img 1][1]
+
 ##关闭
 * 关闭health4j
 
@@ -65,4 +67,4 @@ service messagebus-server stop
 
 通过 `status` 命令查看pid已被kill掉了
 
-
+[1]:https://raw.githubusercontent.com/yanghua/health4j/master/screenshots/service-check.png

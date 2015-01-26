@@ -44,6 +44,8 @@ health4j是一个集中式的Java 项目代码静态分析整合工具。目前�
 运行示例如下图：
 ![img 4][4]
 
+更多介绍请见：[health4j—Java项目的全面体检工具](http://blog.csdn.net/yanghua_kobe/article/details/43155453)
+
 [1]:https://raw.githubusercontent.com/yanghua/health4j/master/screenshots/architecture.png
 [2]:https://raw.githubusercontent.com/yanghua/health4j/master/screenshots/design-diagram.png
 [3]:https://raw.githubusercontent.com/yanghua/health4j/master/screenshots/analysis-tools-compare.png

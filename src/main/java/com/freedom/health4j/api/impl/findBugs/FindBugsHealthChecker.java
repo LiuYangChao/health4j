@@ -3,6 +3,7 @@ package com.freedom.health4j.api.impl.findBugs;
 import com.freedom.health4j.api.Tool;
 import com.freedom.health4j.api.impl.common.AbstractHealthChecker;
 import com.freedom.health4j.model.ReportItem;
+import com.freedom.health4j.util.CommonUtil;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.dom4j.Document;
@@ -67,17 +68,25 @@ public class FindBugsHealthChecker extends AbstractHealthChecker {
         for (Node bug : bugNodes) {
             Element bugElement = (Element) bug;
             Node sourceLineNode = bug.selectSingleNode("Method/SourceLine");
-            Element sourceLineElement = (Element) sourceLineNode;
+            Element sourceLineElement = null;
+
+            if (sourceLineNode != null) {
+                sourceLineElement = (Element) sourceLineNode;
+            }
+
+            if (sourceLineElement == null) {
+                continue;
+            }
 
             String message = bugElement.attributeValue("category") + "-" + bugElement.attributeValue("type");
 
             ReportItem reportItem = new ReportItem();
             reportItem.setToolName(this.toolName);
             reportItem.setMessage(message);
-            reportItem.setBeginLine(Integer.valueOf(sourceLineElement.attributeValue("start")));
-            reportItem.setEndLine(Integer.valueOf(sourceLineElement.attributeValue("end")));
-            reportItem.setBeginColumn(Integer.MAX_VALUE);
-            reportItem.setEndColumn(Integer.MAX_VALUE);
+            reportItem.setBeginLine(CommonUtil.convertStringToIntSafety(sourceLineElement.attributeValue("start")));
+            reportItem.setEndLine(CommonUtil.convertStringToIntSafety(sourceLineElement.attributeValue("end")));
+            reportItem.setBeginColumn(Integer.MIN_VALUE);
+            reportItem.setEndColumn(Integer.MIN_VALUE);
             reportItem.setRule(bugElement.attributeValue("type"));
             reportItem.setPackageName(sourceLineElement.attributeValue("classname"));
             reportItem.setExternalInfoUrl("");

@@ -68,16 +68,22 @@ public abstract class AbstractHealthChecker implements HealthChecker {
         String joinedIgnoredFileType = this.commonConfig.get(Constants.COMMON_IGNORED_FILE_TYPE_KEY);
         if (joinedIgnoredFileType != null && joinedIgnoredFileType.length() > 0) {
             ignoredFileTypes = joinedIgnoredFileType.split(",");
+        } else {
+            ignoredFileTypes = new String[0];
         }
 
         String joinedIgnoredFilePath = this.commonConfig.get(Constants.COMMON_IGNORED_FILE_PATH_KEY);
         if (joinedIgnoredFilePath != null && joinedIgnoredFilePath.length() > 0) {
             ignoredFilePaths = joinedIgnoredFilePath.split(",");
+        } else {
+            ignoredFilePaths = new String[0];
         }
 
         String joinedIgnoredFileSegment = this.commonConfig.get(Constants.COMMON_IGNORED_FILE_SEGMENT_KEY);
         if (joinedIgnoredFileSegment != null && joinedIgnoredFileSegment.length() > 0) {
             ignoredFileSegments = joinedIgnoredFileSegment.split(",");
+        } else {
+            ignoredFileSegments = new String[0];
         }
 
         String reportBasePath = commonConfig.get(Constants.COMMON_REPORT_BASE_PATH_KEY);
@@ -162,4 +168,5 @@ public abstract class AbstractHealthChecker implements HealthChecker {
             throw new IOException(e.toString());
         }
     }
+
 }

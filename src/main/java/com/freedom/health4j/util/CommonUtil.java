@@ -11,7 +11,7 @@ public class CommonUtil {
             return Integer.MIN_VALUE;
         }
 
-        return Integer.valueOf(val);
+        return Integer.parseInt(val);
     }
 
 }

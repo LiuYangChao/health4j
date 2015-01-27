@@ -150,7 +150,7 @@ public class App {
             futures.add(executor.submit(checker));
         }
 
-        int timeoutOfSecond = Integer.valueOf(commonConfig.getProperty("health4j.timeoutpertool"));
+        int timeoutOfSecond = Integer.parseInt(commonConfig.getProperty("health4j.timeoutpertool"));
 
         Collection<ReportItem> joinedReportItems = new ArrayList<>();
         //wait all finish

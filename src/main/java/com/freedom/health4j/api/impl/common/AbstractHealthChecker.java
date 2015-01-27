@@ -152,9 +152,8 @@ public abstract class AbstractHealthChecker implements HealthChecker {
 
         StringBuilder sb = new StringBuilder();
         byte[] buffer = new byte[1024];
-        int bytesRead = 0;
-        while ((bytesRead = bufferedInputStream.read(buffer)) != -1) {
-            sb.append(new String(buffer, 0, bytesRead));
+        while (bufferedInputStream.read(buffer) != -1) {
+            sb.append(new String(buffer, "utf-8"));
         }
 
         return sb.toString();

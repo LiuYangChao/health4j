@@ -31,7 +31,7 @@ public class EmailNotifier implements ReportNotifier {
             HtmlEmail email = new HtmlEmail();
 
             email.setHostName(getCommonConfig().getProperty("health4j.email.host"));
-            email.setSmtpPort(Integer.valueOf(getCommonConfig().getProperty("health4j.email.port")));
+            email.setSmtpPort(Integer.parseInt(getCommonConfig().getProperty("health4j.email.port")));
 
             String authName = getCommonConfig().getProperty("health4j.email.auth.name");
             String authPwd = getCommonConfig().getProperty("health4j.email.auth.password");
@@ -52,7 +52,7 @@ public class EmailNotifier implements ReportNotifier {
             String reportPathStr = getCommonConfig().getProperty(Constants.COMMON_REPORT_PATH_KEY);
             Path reportPath = Paths.get(reportBasePathStr, reportPathStr);
 
-            String htmlContent = new String(Files.readAllBytes(reportPath));
+            String htmlContent = new String(Files.readAllBytes(reportPath), "utf-8");
             email.setHtmlMsg(htmlContent);
             email.setTextMsg("你的邮箱当前不支持接收HTML格式的消息，请通过附件查看!");
 
